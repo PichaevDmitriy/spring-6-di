@@ -16,4 +16,12 @@ public class MyController {
 
         return greetingService.sayGreeting();
     }
+
+    public void afterInit() {
+        System.out.println("## - AfterInit called by Bean Post Processor");
+    }
+
+    public void beforeInit() {
+        System.out.println("## - BeforeInit called by Bean Post Processor");
+    }
 }
