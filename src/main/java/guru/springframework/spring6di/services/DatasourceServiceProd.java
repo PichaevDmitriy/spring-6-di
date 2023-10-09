@@ -3,7 +3,7 @@ package guru.springframework.spring6di.services;
 import org.springframework.context.annotation.*;
 import org.springframework.stereotype.*;
 
-@Profile("ES")
+@Profile("prod")
 @Service("myDatasource")
 public class DatasourceServiceProd implements DatasourceService {
     @Override

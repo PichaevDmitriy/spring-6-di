@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.*;
 import org.springframework.test.context.*;
 
 @SpringBootTest
-@ActiveProfiles("ES")
+@ActiveProfiles({"EN", "prod"})
 class DatasourceControllerTestProd {
     @Autowired
     DatasourceController datasourceController;
